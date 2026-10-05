@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mobile Suit Pilot Survey</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Mobile Suit Pilot Survey</h1>
+    <p id="description">Help us calibrate the next generation of Gundams</p>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">Callsign
+            <input id="name" type="text" placeholder="Enter your callsign" required>
+        </label>
+
+        <label id="email-label" for="email">Comm Channel (Email)
+            <input id="email" type="email" placeholder="Enter your email" required>
+        </label>
+
+        <label id="number-label" for="number">Age (optional)
+            <input id="number" type="number" min="13" max="120" placeholder="Age">
+        </label>
+
+        <label for="dropdown">Pilot type
+            <select id="dropdown">
+                <option disabled selected value>(select pilot type)</option>
+                <option>Student Pilot</option>
+                <option>Newtype</option>
+                <option>Veteran Ace</option>
+                <option>Prefer Not to Say</option>
+                <option>Other</option>
+            </select>
+        </label>
+
+        <p>Would you recommend enlisting to a friend?</p>
+        <label><input type="radio" name="recommend" value="definitely" checked> Definitely</label>
+        <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+        <label><input type="radio" name="recommend" value="not-sure"> Not sure</label>
+
+        <label for="feature">Favorite Gundam
+            <select id="feature">
+                <option disabled selected value>(select an option)</option>
+                <option>Aerial</option>
+                <option>Wing Gundam</option>
+                <option>Freedom Strike</option>
+                <option>Barbatos Lupux Rex</option>
+            </select>
+        </label>
+
+        <p>What would you like to see more of?</p>
+        <label><input type="checkbox" value="mobile-suit-battles"> Mobile Suit Battles</label>
+        <label><input type="checkbox" value="gunpla-builds"> Gunpla Builds</label>
+        <label><input type="checkbox" value="world-building"> World-building & Politics</label>
+        <label><input type="checkbox" value="character-arcs"> Character Arcs</label>
+        <label><input type="checkbox" value="soundtrack"> Soundtrack</label>
+        <label><input type="checkbox" value="spin-offs"> Spin-offs & Side Stories</label>
+
+        <label for="comments">Comments(Opinion)
+            <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+        </label>
+
+        <button id="submit" type="submit">Ready for launch</button>
+    </form>
+
+    <p class="signature">K.Nazareno</p>
+</body>
+
+</html>
